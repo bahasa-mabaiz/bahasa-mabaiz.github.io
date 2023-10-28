@@ -1,0 +1,31 @@
+---
+import Head from "../komponen/head.astro";
+import ToolsPerhitungan from "../komponen/tools-perhitungan.svelte";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap&text=BahasaMabaiz"
+      rel="stylesheet"
+    />
+    <Head />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bahasa Mabaiz</title>
+    <style>
+      .judul {
+        font-family: "Edu TAS Beginner", cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-3">
+      <div class="judul text-center text-3xl">Bahasa Mabaiz</div>
+      <ToolsPerhitungan client:only />
+    </div>
+  </body>
+</html>
